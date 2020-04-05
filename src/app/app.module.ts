@@ -18,7 +18,7 @@ import { ContrasenaPipe } from './pipes/contrasena.pipe';
     AppComponent,
     CapitalizadoPipe,
     DomseguroPipe,
-    ContrasenaPipe
+    ContrasenaPipe,
   ],
   imports: [
     BrowserModule

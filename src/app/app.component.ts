@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit{
+  aux: boolean = false;
+  date;
+  constructor() {
+    this.date = new Date().getFullYear()
+  }
+ 
+  ngOnInit() {
+    setTimeout(() => {
+      this.aux = !this.aux
+    }, 6000)
+  }
   
   nombre: string = 'Capitán América';
   nombre2: string = 'AriEl FernAndEz AlI';
