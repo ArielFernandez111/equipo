@@ -18,7 +18,12 @@ export class AppComponent {
   activar: boolean = true;
 
   idioma: string = 'en';
-  videoUrl: string = 'https://www.youtube.com/embed/9E8Nm3hun0g';
+  videoUrl1: string = 'https://www.youtube.com/embed/9E8Nm3hun0g';
+  videoUrl2: string = 'https://www.youtube.com/embed/v86yXhPEXDw';
+
+  
+  
+ 
 
   valorPromesa = new Promise<string>( (resolve) => {
     setTimeout(() => {
