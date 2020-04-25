@@ -176,13 +176,23 @@
 
 <h3 class="mt-4">Domseguro</h3>
 <hr>
-<div class="row mb-5">
-  <div class="col">
-    <iframe width="560" 
+<div class="row">
+  <div class="col-6">
+    <iframe width="350" 
     height="315" 
-    [src]="videoUrl | domseguro" 
+    [src]="videoUrl1 | domseguro" 
     frameborder="0" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen></iframe>
+  </div>
+  <br>
+  <div class="col-6">
+    <iframe width="350"
+     height="315" 
+     [src]="videoUrl2 | domseguro" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+     allowfullscreen></iframe>
+  
   </div>
 </div>
